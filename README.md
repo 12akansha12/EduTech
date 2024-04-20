@@ -1,2 +1,2 @@
 # EduTech
-Online Learning platform  Using Java , Spring Boot,Mysql 
+Online Learning platform Backend  Using Java , Spring Boot,Mysql 
