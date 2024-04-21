@@ -31,7 +31,7 @@ public class QuizController {
         return ResponseEntity.ok(this.quizService.updateQuiz(quiz));
     }
     //get quiz
-    @GetMapping("/")
+    @GetMapping("/active")
     public ResponseEntity<?> getQuizzes()
     {
         return ResponseEntity.ok(this.quizService.getQuizzes());
@@ -53,7 +53,7 @@ public class QuizController {
     }
     
     //get quiz of particular category
-    @GetMapping("/category/{cid}")
+    @GetMapping("/category/active/{cid}")
     public List<Quiz> getQuizOfCategory(@PathVariable("cid") Long cid)
     {
     	Category cat=new Category();
